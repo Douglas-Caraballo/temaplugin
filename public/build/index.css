@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.WrapperBody{
+    background-image: url('https://i.postimg.cc/nzTPCHr2/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@media only screen and (min-width: 1100px){
+    .WrapperBody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site{
+        max-width: 70%;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        box-shadow: 3px 3px 3px 3px rgba( 0, 0, 0, 0.5);
+    }
+}
+.ContainerLogo{
+    width: 8rem;
+}
+.ContainerLogoImg{
+    width: 100%;
+}
+.site-header{
+    display: flex;
+    align-items: center;
+    background-color: #22577A;
+    justify-content: space-around;
+}
+.MenuNavDesktop{
+    display: none;
+}
+@media only screen and (min-width: 1100px){
+    .MenuNavDesktop{
+        display: flex;
+        gap: 1rem;
+    }
+}
+.ContainerHamburger{
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+.HamburgerLine{
+    background-color: #000;
+    margin: 0.25rem;
+    width: 2rem;
+    height: 0.25rem;
+}
+@media only screen and (min-width: 1100px){
+    .ContainerHamburger{
+        display: none;
+    }
+}
+.AsideMenu{
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    width: 22rem;
+    max-width: 100%;
+    background-color: #38A3A5;
+    height: 100%;
+    right: 0;
+    transition: all 0.5s;
+}
+.AsideWrapper{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.AsideActivate{
+    transform: translate(25rem);
+    transition: all 0.5s;
+}
+.MobileMenu{
+    padding-top: 1rem;
+}
+.AsideClose{
+    z-index: 1;
+    display: block;
+    text-align: center;
+    left: 46%;
+    right: auto;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+}
+.MenuNavMobile .menu-item{
+        padding: 1rem;
+        border-bottom: 2px solid #141414;
+    }
+.MenuNavMobile .menu-item a{
+            font-size: 1.25rem;
+            color:white;
+        }
+@media only screen and (min-width: 1100px){
+    .MenuNavMobile{
+        display: none;
+    }
+}
