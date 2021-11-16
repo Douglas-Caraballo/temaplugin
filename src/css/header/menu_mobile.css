@@ -4,7 +4,7 @@
     z-index: 111;
     width: 22rem;
     max-width: 100%;
-    background-color: #38A3A5;
+    background-color: #11324D;
     height: 100%;
     right: 0;
     transition: all 0.5s;
@@ -37,7 +37,7 @@
         border-bottom: 2px solid #141414;
         a{
             font-size: 1.25rem;
-            color:white;
+            color: #C1CFC0;
         }
     }
 }
