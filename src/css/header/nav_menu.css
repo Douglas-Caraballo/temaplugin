@@ -1,7 +1,7 @@
 .site-header{
     display: flex;
     align-items: center;
-    background-color: #6B7AA1;
+    background-color: #A1CAE2;
     justify-content: space-around;
 }
 .MenuNavDesktop{
@@ -11,6 +11,14 @@
 @media only screen and (min-width: 1100px){
     .MenuNavDesktop{
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
+        .menu-item{
+            a{
+                text-transform: uppercase;
+                color: #1597E5;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
     }
 }
