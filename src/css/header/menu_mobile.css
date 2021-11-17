@@ -19,6 +19,9 @@
 }
 .MobileMenu{
     padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .AsideClose{
     z-index: 1;
@@ -26,7 +29,7 @@
     text-align: center;
     left: 46%;
     right: auto;
-    color: black;
+    color: #C1CFC0;
     cursor: pointer;
     font-size: 1.5rem;
     padding-top: 4rem;
@@ -38,6 +41,43 @@
         a{
             font-size: 1.25rem;
             color: #C1CFC0;
+        }
+    }
+}
+.MenuNavMobileSearch{
+    .SearchContainerForm{
+        position: relative;
+        .SearchBar{
+            background-color: transparent;
+            border: 1px solid #C1CFC0;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            color: #C1CFC0;
+            width: 100%;
+        }
+        .SearchButton{
+            width: 2rem;
+            border-radius: 2rem;
+            background:transparent;
+            border-color: transparent;
+            position: absolute;
+            right: 0.2rem;
+            height: 2rem;
+            top: 0.2rem;
+            .SearchButtonImg{
+                width: 1rem;
+            }
+        }
+    }
+}
+.MenuNavMobileSocial{
+    .ListSocial{
+        display: flex;
+        gap:1rem;
+        justify-content:center;
+        .SocialName{
+            display: none;
         }
     }
 }

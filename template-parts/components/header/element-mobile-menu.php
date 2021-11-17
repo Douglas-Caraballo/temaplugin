@@ -11,11 +11,11 @@
 
                 wp_nav_menu($args);
             ?>
-            <div>
+            <div class="MenuNavMobileSearch">
                 <?php get_template_part( 'template-parts/components/reusable/element' , 'search'); ?>
             </div>
-            <div>
-                
+            <div class="MenuNavMobileSocial">
+                <?php get_template_part( 'template-parts/components/reusable/element', 'social' ) ?>
             </div>
         </div>
     </div>
