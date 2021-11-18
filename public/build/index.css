@@ -30,16 +30,107 @@ ul{
     display: none;
 }
 @media only screen and (min-width: 1100px){
+    .HeaderMenu{
+        display: flex;
+        gap: 1rem;
+    }
     .MenuNavDesktop{
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
     }
+        .MenuNavDesktop .menu-item{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            transition: all 0.5s;
+            padding: 0 0.5rem;
+        }
             .MenuNavDesktop .menu-item a{
                 text-transform: uppercase;
                 color: #1597E5;
                 font-weight: bold;
-                letter-spacing: 1px;
+                height: 100%;
+                line-height: 8.5rem;
             }
+        .MenuNavDesktop .menu-item:hover{
+            background-color: #142F43;
+        }
+            .MenuNavDesktop .menu-item:hover a{
+                color:white;
+            }
+    .DropdownSocialList{
+        color: #1597E5;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 100%;
+        line-height: 8.5rem;
+        font-size: 1rem;
+    }
+    .SocialList{
+        display: none;
+        position: absolute;
+        background-color: #A1CAE2;
+        opacity: 0;
+        -webkit-animation: list 0.7s forwards 1;
+                animation: list 0.7s forwards 1;
+    }
+            .SocialList .ListSocial .SocialListItem{
+                border-bottom: 1px solid white;
+            }
+            .SocialList .ListSocial .SocualListItemRedirect{
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                color: white;
+                padding: 1rem;
+            }
+            .SocialList .ListSocial .Facebook:hover{
+                background-color: #3b5998;
+            }
+            .SocialList .ListSocial .Twitter:hover{
+                background-color:#00acee;
+            }
+            .SocialList .ListSocial .Instagram:hover{
+                background-color: #c13584;
+            }
+    .DropdownMenuItem{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s;
+        padding: 0 0.5rem;
+    }
+    .DropdownSocialList:hover{
+        background-color: #142F43;
+        color:white;
+    }
+        .Dropdown:hover .SocialList{
+            display: block;
+            z-index: 40;
+        }
+}
+@-webkit-keyframes list{
+    0%{
+        transform: translate3d(0, 22px, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes list{
+    0%{
+        transform: translate3d(0, 22px, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
 }
 .ContainerHamburger{
     display: block;
