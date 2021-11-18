@@ -1,3 +1,6 @@
+.Dropdown{
+    display: none;
+}
 .site-header{
     display: flex;
     align-items: center;
@@ -9,6 +12,9 @@
 }
 
 @media only screen and (min-width: 1100px){
+    .Dropdown{
+        display: block;
+    }
     .HeaderMenu{
         display: flex;
         gap: 1rem;
@@ -58,21 +64,25 @@
             .SocialListItem{
                 border-bottom: 1px solid white;
             }
-            .SocualListItemRedirect{
+            .SocialListItemRedirect{
                 display: flex;
                 gap: 0.5rem;
                 align-items: center;
-                color: white;
+                color: #1597E5;
                 padding: 1rem;
+                font-weight: bold;
             }
             .Facebook:hover{
                 background-color: #3b5998;
+                color: white;
             }
             .Twitter:hover{
                 background-color:#00acee;
+                color: white;
             }
             .Instagram:hover{
                 background-color: #c13584;
+                color: white;
             }
         }
     }

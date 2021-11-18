@@ -20,6 +20,9 @@ ul{
 .ContainerLogoImg{
     width: 100%;
 }
+.Dropdown{
+    display: none;
+}
 .site-header{
     display: flex;
     align-items: center;
@@ -30,6 +33,9 @@ ul{
     display: none;
 }
 @media only screen and (min-width: 1100px){
+    .Dropdown{
+        display: block;
+    }
     .HeaderMenu{
         display: flex;
         gap: 1rem;
@@ -80,21 +86,25 @@ ul{
             .SocialList .ListSocial .SocialListItem{
                 border-bottom: 1px solid white;
             }
-            .SocialList .ListSocial .SocualListItemRedirect{
+            .SocialList .ListSocial .SocialListItemRedirect{
                 display: flex;
                 gap: 0.5rem;
                 align-items: center;
-                color: white;
+                color: #1597E5;
                 padding: 1rem;
+                font-weight: bold;
             }
             .SocialList .ListSocial .Facebook:hover{
                 background-color: #3b5998;
+                color: white;
             }
             .SocialList .ListSocial .Twitter:hover{
                 background-color:#00acee;
+                color: white;
             }
             .SocialList .ListSocial .Instagram:hover{
                 background-color: #c13584;
+                color: white;
             }
     .DropdownMenuItem{
         height: 100%;
