@@ -241,6 +241,20 @@ ul{
         display: none;
     }
 }
+.FooterWidgets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.widget_tag_cloud{
+    list-style: none;
+}
+@media only screen and (min-width: 1100px){
+    .FooterWidgets{
+        flex-direction: row;
+    }
+}
 .site-info{
     padding: 1rem;
     color: white;

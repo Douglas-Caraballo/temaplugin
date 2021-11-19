@@ -185,3 +185,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Areas de witgets
  */
 require get_template_directory() . '/inc/widgets-areas.php';
+
+/**
+ *  Trae las modificaciones al codigo fuente del wordpress
+ */
+require get_template_directory() . '/inc/utilities.php';
