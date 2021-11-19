@@ -241,3 +241,23 @@ ul{
         display: none;
     }
 }
+.site-info{
+    padding: 1rem;
+    color: white;
+    background-color: #17141f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.site-info .ListSocial{
+        display: flex;
+        justify-content:center;
+        gap: 0.5rem;
+    }
+.site-info .ListSocial .SocialListItemRedirect > img{
+            width: 1rem;
+        }
+.site-info .ListSocial .SocialName{
+            display: none;
+        }
