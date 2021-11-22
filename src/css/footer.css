@@ -1,2 +1,5 @@
 @import './footer/footer-widgets.css';
+@import './footer/tags-cloud.css';
+@import './footer/categories.css';
+@import './footer/news-post.css';
 @import './footer/footer-info.css';

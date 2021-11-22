@@ -1,0 +1,14 @@
+.FooterWidgetArea{
+    .widget_recent_entries{
+        display: flex;
+        flex-direction: column;
+        .wp-block-latest-posts{
+            a{
+                transition: all 0.5s;
+            }
+            a:hover{
+                color: #1597E5;
+            }
+        }
+    }
+}

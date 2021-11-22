@@ -1,0 +1,16 @@
+.FooterWidgetArea{
+    .widget_categories{
+        display: flex;
+        flex-direction: column;
+        .cat-item{
+            a{
+                transition: all 0.5s;
+            }
+        }
+        .cat-item:hover{
+            a{
+                color:#1597E5;
+            }
+        }
+    }
+}
