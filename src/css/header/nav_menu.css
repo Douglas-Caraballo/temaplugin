@@ -4,7 +4,7 @@
 .site-header{
     display: flex;
     align-items: center;
-    background-color: #A1CAE2;
+    background-color: #262626;
     justify-content: space-around;
 }
 .MenuNavDesktop{
@@ -57,7 +57,7 @@
     .SocialList{
         display: none;
         position: absolute;
-        background-color: #A1CAE2;
+        background-color: #262626;
         opacity: 0;
         animation: list 0.7s forwards 1;
         .ListSocial{
