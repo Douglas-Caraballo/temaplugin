@@ -190,3 +190,8 @@ require get_template_directory() . '/inc/widgets-areas.php';
  *  Trae las modificaciones al codigo fuente del wordpress
  */
 require get_template_directory() . '/inc/utilities.php';
+
+/**
+ * Trae las nuevas taxonomias
+ */
+require get_template_directory() . '/inc/taxonomies.php';
