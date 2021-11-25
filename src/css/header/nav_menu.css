@@ -30,28 +30,27 @@
             padding: 0 0.5rem;
             a{
                 text-transform: uppercase;
-                color: #1597E5;
+                color: #fff;
                 font-weight: bold;
                 height: 100%;
-                line-height: 8.5rem;
+                line-height: 8rem;
             }
         }
         .menu-item:hover{
-            background-color: #142F43;
             a{
-                color:white;
+                color:#c7a770;
             }
         }
     }
     .DropdownSocialList{
-        color: #1597E5;
+        color: #fff;
         border: none;
         background-color: transparent;
         cursor: pointer;
         text-transform: uppercase;
         font-weight: bold;
         height: 100%;
-        line-height: 8.5rem;
+        line-height: 8rem;
         font-size: 1rem;
     }
     .SocialList{
@@ -68,21 +67,18 @@
                 display: flex;
                 gap: 0.5rem;
                 align-items: center;
-                color: #1597E5;
+                color: #fff;
                 padding: 1rem;
                 font-weight: bold;
             }
             .Facebook:hover{
                 background-color: #3b5998;
-                color: white;
             }
             .Twitter:hover{
                 background-color:#00acee;
-                color: white;
             }
             .Instagram:hover{
                 background-color: #c13584;
-                color: white;
             }
         }
     }
@@ -94,8 +90,7 @@
         padding: 0 0.5rem;
     }
     .DropdownSocialList:hover{
-        background-color: #142F43;
-        color:white;
+        color:#c7a770;
     }
     .Dropdown:hover{
         .SocialList{

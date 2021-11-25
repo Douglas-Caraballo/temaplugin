@@ -85,4 +85,7 @@
     .MenuNavMobile{
         display: none;
     }
+    .AsideMenu{
+        display: none;
+    }
 }
