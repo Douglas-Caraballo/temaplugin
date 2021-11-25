@@ -391,7 +391,7 @@ ul{
             transition: all 0.5s;
         }
 .FooterWidgetArea .widget_tag_cloud .tag-cloud-link:hover{
-            color:#1597E5;
+            color:#c7a770;
         }
 .FooterWidgetArea .widget_categories{
         display: flex;
@@ -401,7 +401,7 @@ ul{
                 transition: all 0.5s;
             }
 .FooterWidgetArea .widget_categories .cat-item:hover a{
-                color:#1597E5;
+                color:#c7a770;
             }
 .FooterWidgetArea .widget_recent_entries{
         display: flex;
@@ -411,7 +411,7 @@ ul{
                 transition: all 0.5s;
             }
 .FooterWidgetArea .widget_recent_entries .wp-block-latest-posts a:hover{
-                color: #1597E5;
+                color: #c7a770;
             }
 .site-footer{
     background-color: #262626;
