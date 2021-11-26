@@ -327,6 +327,9 @@ ul{
     -o-object-position: center;
        object-position: center;
 }
+.BlogImg:hover {
+    filter: brightness(110%);
+}
 .ContentPost{
     display: flex;
     flex-direction: column;
@@ -387,8 +390,15 @@ ul{
                     transition: all 0.5s;
                 }
 @media only screen and (min-width: 1100px){
-    .HomeWidgetsArea{
+    .WrapperHomeWidgets{
         width: 26%;
+    }
+    .HomeWidgetsArea{
+        position: sticky;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        top: 1rem;
     }
                 .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item:hover{
                     color: #c7a770;

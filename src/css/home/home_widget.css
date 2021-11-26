@@ -24,8 +24,13 @@
 }
 
 @media only screen and (min-width: 1100px){
-    .HomeWidgetsArea{
+    .WrapperHomeWidgets{
         width: 26%;
+    }
+    .HomeWidgetsArea{
+        position: sticky;
+        height: max-content;
+        top: 1rem;
         .widget_categories{
             .wp-block-categories{
                 .cat-item:hover{

@@ -21,6 +21,9 @@
     object-fit: cover;
     object-position: center;
 }
+.BlogImg:hover {
+    filter: brightness(110%);
+}
 .ContentPost{
     display: flex;
     flex-direction: column;
