@@ -26,16 +26,17 @@
                     </figure>
                     <div>
                         <span class="PostCategories"><h5 class="PostCategoriesName">- <?php the_category(' / ');?> -</h5></span>
-                        <?php the_title( '<h3 class="FeaturedTitle"><a href='.get_the_permalink().'>','</a></h3>'); ?>
+                        <?php the_title( '<h3 class="PostTitle"><a href='.get_the_permalink().'>','</a></h3>'); ?>
                     </div>
                     <div class="PostExcerpt">
                         <?php the_excerpt();?>
                     </div>
                     <div>
-                        <span class="FeatureInfoDate"><h5><?php the_author();?> / <?php echo get_the_date('M d,Y');?></h5></span>
+                        <span class="FeatureInfoDate"><h5 class="PostInfoDate"><?php the_author();?> / <?php echo get_the_date('M d,Y');?></h5></span>
                     </div>
             </article>
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
+    <?php get_template_part('template-parts/components/reusable/element-load','more'); ?>
 </div>

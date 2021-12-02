@@ -148,6 +148,11 @@ function wordpressplugin_scripts() {
 	wp_enqueue_script('tema-script',get_template_directory_uri().'/public/build/index.js',array(),'1.0.0',true);
 	wp_enqueue_style('miestilo', get_template_directory_uri().'/public/build/index.css',array(),'1.0.0');
 
+	wp_localize_script('tema-script','requestListPostVar',array(
+        'url' => rest_url('post/posts'),
+        'nonce' => wp_create_nonce('wp_rest'),
+    ));
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -195,3 +200,8 @@ require get_template_directory() . '/inc/utilities.php';
  * Trae las nuevas taxonomias
  */
 require get_template_directory() . '/inc/taxonomies.php';
+
+/**
+ * Registra el endpoint y la funcion de ver más
+ */
+require get_template_directory() . '/inc/endpoint.php';

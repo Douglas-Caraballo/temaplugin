@@ -26,7 +26,17 @@ eval("const hamburger =document.querySelector('#hamburger'),\n    menu = documen
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./load-more */ \"./src/js/load-more.js\");\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_load_more__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/load-more.js":
+/*!*****************************!*\
+  !*** ./src/js/load-more.js ***!
+  \*****************************/
+/***/ (() => {
+
+eval("const LoadMore = document.getElementById('load-more');\nlet posted= document.querySelector('.ContentPost');\nlet ItemPost;\nif(posted){\n    ItemPost=posted.querySelector('.ContenPostItem');\n    LoadMore.addEventListener('click', async()=>{\n    const url = requestListPostVar.url;\n    const posts = await request_posts(url);\n    display_post(posts);\n    });\n}\n\nfunction display_post(posts){\n    posts.map(post => {\n        let NewItemPost = ItemPost.cloneNode(true);\n\n        let permalink = NewItemPost.querySelector('.PostImg a');\n        permalink.setAttribute('href', post.permalink);\n        permalink.innerHTML=post.thumbnail;\n\n        let category = NewItemPost.querySelector('.PostCategoriesName');\n        category.innerHTML=\"\";\n        console.log(post.category);\n        //let count=0;\n        post.category.map(cat =>{\n            let link = document.createElement(\"a\");\n            link.setAttribute('href',cat.taxonomy+'/'+cat.slug);\n            link.innerHTML=cat.name;\n            category.appendChild(link);\n            /*count++\n            while (count>0){\n                document.createTextNode(\"/\");\n                count=0;\n            }*/\n        })\n        category.insertAdjacentHTML('afterbegin','- ')\n        category.insertAdjacentHTML('beforeend',' -')\n\n        let title = NewItemPost.querySelector('.PostTitle a');\n        title.setAttribute('href', post.permalink);\n        title.innerHTML=post.title;\n\n        let excerpt = NewItemPost.querySelector('.PostExcerpt');\n        excerpt.innerHTML=post.excerpt;\n\n        let date = NewItemPost.querySelector('.PostInfoDate');\n        date.innerHTML=post.author+' / '+post.date;\n\n        posted.insertAdjacentElement('beforeend', NewItemPost);\n    });\n}\n\n\nasync function request_posts(url){\n    let current_page = LoadMore.dataset.currentPage;\n\n    let next_page = parseInt(current_page, 10) + 1;\n\n    LoadMore.dataset.currentPage=next_page;\n\n    const response = await fetch(`${url}?paged=${next_page}&per_page=2`);\n\n    const posts = await response.json();\n\n    return posts.posts;\n\n}\n\n//# sourceURL=webpack://underscores/./src/js/load-more.js?");
 
 /***/ })
 
