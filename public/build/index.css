@@ -448,6 +448,7 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding-top: 1rem;
 }
 .widget_tag_cloud{
     list-style: none;
@@ -486,6 +487,9 @@ ul{
 .FooterWidgetArea .widget_tag_cloud .tag-cloud-link{
             padding: 0.5rem;
             transition: all 0.5s;
+            box-shadow: 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.9);
+            border: 1px solid #666;
+            border-radius: 0.25rem;
         }
 .FooterWidgetArea .widget_tag_cloud .tag-cloud-link:hover{
             color:#c7a770;

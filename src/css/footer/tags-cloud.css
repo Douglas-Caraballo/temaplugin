@@ -9,6 +9,9 @@
         .tag-cloud-link{
             padding: 0.5rem;
             transition: all 0.5s;
+            box-shadow: 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.9);
+            border: 1px solid #666;
+            border-radius: 0.25rem;
         }
         .tag-cloud-link:hover{
             color:#c7a770;
