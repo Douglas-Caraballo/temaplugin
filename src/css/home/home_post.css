@@ -6,7 +6,7 @@
 .WrapperPosts{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 .SectionTitle{
     border-bottom: 2px solid #555;
