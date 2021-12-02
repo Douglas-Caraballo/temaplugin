@@ -25,7 +25,7 @@ function display_post(posts){
         post.category.map(cat =>{
             let link = document.createElement("a");
             link.setAttribute('href',cat.taxonomy+'/'+cat.slug);
-            link.innerHTML=cat.name;
+            link.innerHTML=cat.name+" - ";
             category.appendChild(link);
             /*count++
             while (count>0){
@@ -33,8 +33,8 @@ function display_post(posts){
                 count=0;
             }*/
         })
-        category.insertAdjacentHTML('afterbegin','- ')
-        category.insertAdjacentHTML('beforeend',' -')
+        category.insertAdjacentHTML('afterbegin','- ');
+        //category.insertAdjacentHTML('beforeend','-');
 
         let title = NewItemPost.querySelector('.PostTitle a');
         title.setAttribute('href', post.permalink);

@@ -25,7 +25,7 @@
                         </a>
                     </figure>
                     <div>
-                        <span class="PostCategories"><h5 class="PostCategoriesName">- <?php the_category(' / ');?> -</h5></span>
+                        <span class="PostCategories"><h5 class="PostCategoriesName">- <?php the_category(' - ');?> -</h5></span>
                         <?php the_title( '<h3 class="PostTitle"><a href='.get_the_permalink().'>','</a></h3>'); ?>
                     </div>
                     <div class="PostExcerpt">

@@ -10,9 +10,7 @@
 }
 .FooterWidgetArea{
     display: grid;
-    grid-template-areas:"tags"
-                        "categorias"
-                        "recientes";
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     a{
         color: white;
@@ -22,8 +20,7 @@
 @media only screen and (min-width: 720px){
     .FooterWidgetArea{
         display: grid;
-        grid-template-areas:"tags tags"
-                            "categorias recientes";
+        grid-template-columns: repeat(2, 1fr);
         width: 80%;
     }
 }
@@ -31,5 +28,8 @@
 @media only screen and (min-width: 1100px){
     .FooterWidgets{
         flex-direction: row;
+    }
+    .FooterWidgetArea{
+        grid-template-columns: repeat(3, 1fr);
     }
 }

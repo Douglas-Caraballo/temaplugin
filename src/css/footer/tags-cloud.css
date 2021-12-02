@@ -1,6 +1,5 @@
 .FooterWidgetArea{
     .widget_tag_cloud{
-        grid-area: tags;
         display: flex;
         flex-direction:column;
         align-items:center;
