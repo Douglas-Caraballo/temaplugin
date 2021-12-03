@@ -15,7 +15,7 @@
                 <?php get_template_part( 'template-parts/components/reusable/element' , 'search'); ?>
             </div>
             <div class="MenuNavMobileSocial">
-                <?php get_template_part( 'template-parts/components/reusable/element', 'social' ) ?>
+                <?php get_template_part( 'template-parts/components/reusable/element', 'social' ); ?>
             </div>
         </div>
     </div>
