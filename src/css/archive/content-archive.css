@@ -1,5 +1,7 @@
 .WrapperArchive{
     padding: 1rem;
+}
+.WrapperArchiveList{
     display: flex;
     flex-direction: column;
     gap: 2rem;

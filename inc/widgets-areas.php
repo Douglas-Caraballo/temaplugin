@@ -17,6 +17,13 @@ function TemaAreasWidgets(){
         'after_widget' => '</div>'
     ));
 
+    register_sidebar( array(
+        'name' => __('Tema Archive', 'Tema'),
+        'id' => 'archive',
+        'description' => __('Widget area to define widgest into Archive','Tema'),
+        'before_widget' => '<div class="ArchiveWidgets %2$s">',
+        'after_widget' => '</div>'
+    ));
 }
 
 add_action( 'widgets_init', 'TemaAreasWidgets');
