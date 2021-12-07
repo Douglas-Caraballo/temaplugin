@@ -50,6 +50,25 @@
     font-weight: bold;
     font-style: italic;
 }
+.Navigation{
+    .NavigationList{
+        display: flex;
+        gap:0.5rem;
+        flex-wrap: wrap;
+        li{
+            background-color: #262626;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            a{
+                color: white;
+                font-weight: bold;
+            }
+        }
+        .active{
+            opacity: 0.9;
+        }
+    }
+}
 @media only screen and (min-width: 1020px){
     .ArchiveItem{
         flex-direction: row;

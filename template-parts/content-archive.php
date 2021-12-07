@@ -23,7 +23,7 @@
 
 				endwhile;
 
-				the_posts_navigation();
+				WordpresspluginNumericPagination();
 			?>
 			</div>
 			<?php
