@@ -31,7 +31,7 @@
                 <?php the_title( '<h3 class="FeaturedTitle"><a href='.get_the_permalink().'>','</a></h3>'); ?>
                 <?php the_excerpt(); ?>
             </div>
-            <div class="SeeMore">
+            <div class="SeeMoreFeature">
                 <a href="<?= esc_url(get_permalink($query_featured->id));?>">Ver post</a>
             </div>
         </article>

@@ -276,11 +276,11 @@ ul{
     -o-object-position: center;
        object-position: center;
 }
-.SeeMore{
+.SeeMoreFeature{
     display: flex;
     justify-content: center;
 }
-.SeeMore a{
+.SeeMoreFeature a{
         background-color: #262626;
         color: white;
         padding: 1rem;
@@ -297,7 +297,7 @@ ul{
         .FeaturedTitle:hover a{
             opacity: 0.7;
         }
-        .SeeMore:hover a{
+        .SeeMoreFeature:hover a{
             background-color:#888;
             padding: 1rem 1.25rem;
         }
