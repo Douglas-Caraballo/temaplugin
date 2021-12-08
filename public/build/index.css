@@ -488,6 +488,13 @@ ul{
         overflow: hidden;
         text-align: justify;
     }
+.ArchiveItemDate .ArchivePostAutor{
+        display: flex;
+        gap: 0.5rem;
+    }
+.ArchiveItemDate .ArchivePostAutor::before{
+        content: url('https://i.postimg.cc/gJxwLgzC/profile-user.png');
+    }
 .SeeMore{
     color:white;
     background-color: #262626;

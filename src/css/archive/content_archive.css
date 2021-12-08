@@ -42,6 +42,13 @@
         overflow: hidden;
         text-align: justify;
     }
+    .ArchivePostAutor{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .ArchivePostAutor::before{
+        content: url('https://i.postimg.cc/gJxwLgzC/profile-user.png');
+    }
 }
 .SeeMore{
     color:white;
