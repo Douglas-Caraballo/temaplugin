@@ -28,6 +28,7 @@
     a{
         font-style: italic;
         color: #111;
+        transition: all 0.5s;
     }
 }
 .ArchiveItemDate{
@@ -49,6 +50,7 @@
     padding: 0.5rem 2rem;
     font-weight: bold;
     font-style: italic;
+    transition: all 0.5s;
 }
 .Navigation{
     .NavigationList{
@@ -86,5 +88,14 @@
     }
     .WrapperArchiveList{
         width: 75%;
+    }
+    .SeeMore:hover{
+        color: #c7a770;
+        padding: 0.5rem 2.3rem;
+    }
+    .ArchiveTitlePost:hover{
+        a{
+            opacity: 0.7;
+        }
     }
 }

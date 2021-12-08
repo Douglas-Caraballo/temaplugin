@@ -411,7 +411,7 @@ ul{
 .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item a{
                     color: #222;
                     font-weight: bold;
-                    font-size:0.8rem;
+                    font-size:0.85rem;
                     transition: all 0.5s;
                 }
 @media only screen and (min-width: 1100px){
@@ -474,6 +474,7 @@ ul{
 .ArchiveTitlePost a{
         font-style: italic;
         color: #111;
+        transition: all 0.5s;
     }
 .ArchiveItemDate{
     display: flex;
@@ -496,6 +497,7 @@ ul{
     padding: 0.5rem 2rem;
     font-weight: bold;
     font-style: italic;
+    transition: all 0.5s;
 }
 .Navigation .NavigationList{
         display: flex;
@@ -532,6 +534,13 @@ ul{
     .WrapperArchiveList{
         width: 75%;
     }
+    .SeeMore:hover{
+        color: #c7a770;
+        padding: 0.5rem 2.3rem;
+    }
+        .ArchiveTitlePost:hover a{
+            opacity: 0.7;
+        }
 }
 .ArchiveWidgetsArea{
     display: flex;
@@ -544,14 +553,16 @@ ul{
             gap:1rem;
         }
 .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item{
-                color: #111;
+                color: #222;
                 font-weight: bold;
                 font-size: 0.85rem;
+                transition: all 0.5s;
             }
 .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item a{
-                    color: #111;
+                    color: #222;
                     font-weight: bold;
                     font-size: 0.85rem;
+                    transition: all 0.5s;
                 }
 @media only screen and (min-width: 1020px){
     .WrapperArchiveWidgets{
@@ -565,6 +576,12 @@ ul{
         height: max-content;
         top: 1rem;
     }
+                .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item:hover{
+                    color: #c7a770;
+                }
+                    .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item:hover a{
+                        color: #c7a770;
+                    }
 }
 .WrapperNotfound{
     display: flex;
