@@ -22,30 +22,34 @@ get_header();
 					?>
 				</h1>
 			</header><!-- .page-header -->
+			<div class="WrapperSearch">
+			<div class="WrapperSearchList">
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+					/**
+					 * Run the loop for the search to output the results.
+					 * If you want to overload this in a child theme then include a file
+					 * called content-search.php and that will be used instead.
+					 */
+					get_template_part( 'template-parts/content', 'search' );
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+				endwhile;
 
-			endwhile;
-
-			the_posts_navigation();
-
+				WordpresspluginNumericPagination();
+				?>
+			</div>
+		<?php
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 		?>
-
+		<?php get_template_part( 'template-parts/components/archive/element-widget-archive' ); ?>
+		</div>
 	</main><!-- #main -->
 
 <?php
