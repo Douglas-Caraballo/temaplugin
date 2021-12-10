@@ -1,15 +1,25 @@
 <div>
-    <form action="" method="post">
-        <label for="">Nombre</label>
-        <input type="text" name="" id="" required>
+    <?php
+        if ( isset($_GET['sent']) ){
+            if ( $_GET['sent'] == '1'){
+                echo "<p> ✔ Formulario enviado correctamente</p><br>";
+            }
+            else {
+                echo "<p> Hubo un error al enviar</p><br>";
+            }
+        }
+    ?>
+    <form action="<?php echo admin_url( 'admin-post.php' ); ?>" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" required>
 
-        <label for="">Correo</label>
-        <input type="email" name="" id="" required>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" required>
 
-        <label for="">Mensaje</label>
-        <textarea name="" id="" cols="30" rows="10" required></textarea>
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
-        <input type="hidden" name="">
-        <input type="submit" value="">
+        <input type="hidden" name="action" value="process_form">
+        <input type="submit" name="submit" value="Enviar">
     </form>
 </div>
