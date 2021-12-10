@@ -726,6 +726,23 @@ ul{
         opacity: 0.8;
     }
 }
+.FormContact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.FormContact input{
+        padding: 0.8rem;
+        font-size:1rem;
+    }
+.SubmitContact{
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+    border:none;
+    border-radius: 2rem;
+}
 .FooterWidgets{
     display: flex;
     flex-direction: column;

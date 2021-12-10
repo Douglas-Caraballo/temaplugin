@@ -22,5 +22,5 @@ function send_mail_data() {
 
 	$sendmail = wp_mail( $adminmail, $subject, $msg, $headers);
 
-	wp_redirect( home_url("/contact/")."?sent=".$sendmail ); //asumiendo que existe esta url
+	wp_redirect( home_url("/contactenos/")."?sent=".$sendmail ); //asumiendo que existe esta url
 }
