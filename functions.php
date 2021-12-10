@@ -205,3 +205,8 @@ require get_template_directory() . '/inc/taxonomies.php';
  * Registra el endpoint y la funcion de ver más
  */
 require get_template_directory() . '/inc/endpoint.php';
+
+/**
+ * Función para enviar el correo de contacto
+ */
+require get_template_directory() . '/inc/process-form.php';
