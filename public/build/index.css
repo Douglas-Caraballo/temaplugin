@@ -745,11 +745,10 @@ ul{
 }
 .ContactFollowWrapper{
     background-color: #353535;
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     color: white;
     justify-content: space-around;
 }
@@ -766,6 +765,7 @@ ul{
                 align-items: center;
                 justify-content: center;
                 height: 2.5rem;
+                transition: all 0.3s;
             }
 .ContactFollowWrapper .ListSocial .SocialListItem .SocialListItemRedirect p{
                     display: none;
@@ -784,6 +784,9 @@ ul{
     align-items: center;
     gap: 1rem;
 }
+.ContactInfo p{
+        font-size: 0.7rem;
+    }
 .ContactContentImg{
     width: 1.5rem;
     border: 1px solid;
@@ -794,12 +797,24 @@ ul{
 .ContactImg{
     width: 100%;
 }
-.WrapperContactForm{
-    width: 50%;
-}
 .PageTitleContact{
     text-align: center;
     padding: 1rem;
+}
+@media only screen and (min-width: 1020px){
+    .WrapperContactForm{
+        width: 50%;
+    }
+    .ContactFollowWrapper{
+        width: 50%;
+        padding: 3rem;
+    }
+                .ContactFollowWrapper .ListSocial .SocialListItem .SocialListItemRedirect:hover{
+                    scale: 1.3;
+                }
+        .ContactInfo p{
+            font-size: 1rem;
+        }
 }
 .FooterWidgets{
     display: flex;
