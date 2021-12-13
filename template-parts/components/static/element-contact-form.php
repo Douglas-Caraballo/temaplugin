@@ -1,4 +1,4 @@
-<div>
+<div class="WrapperContactForm">
     <?php
         if ( isset($_GET['sent']) ){
             if ( $_GET['sent'] == '1'){

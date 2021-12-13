@@ -743,6 +743,64 @@ ul{
     border:none;
     border-radius: 2rem;
 }
+.ContactFollowWrapper{
+    background-color: #353535;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    color: white;
+    justify-content: space-around;
+}
+.ContactFollowWrapper .ListSocial{
+        display: flex;
+        gap:1rem;
+        justify-content:center;
+        border-top: 1px solid;
+        padding-top: 1rem;
+    }
+.ContactFollowWrapper .ListSocial .SocialListItem .SocialListItemRedirect{
+                width: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 2.5rem;
+            }
+.ContactFollowWrapper .ListSocial .SocialListItem .SocialListItemRedirect p{
+                    display: none;
+                }
+.ContactFollowWrapper .ListSocial .SocialListItem .Facebook{
+                background-color: #3b5998;
+            }
+.ContactFollowWrapper .ListSocial .SocialListItem .Twitter{
+                background-color:#00acee;
+            }
+.ContactFollowWrapper .ListSocial .SocialListItem .Instagram{
+                background-color: #c13584;
+            }
+.ContactInfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ContactContentImg{
+    width: 1.5rem;
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    height: 1.5rem;
+}
+.ContactImg{
+    width: 100%;
+}
+.WrapperContactForm{
+    width: 50%;
+}
+.PageTitleContact{
+    text-align: center;
+    padding: 1rem;
+}
 .FooterWidgets{
     display: flex;
     flex-direction: column;
