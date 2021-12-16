@@ -24,6 +24,14 @@ function TemaAreasWidgets(){
         'before_widget' => '<div class="ArchiveWidgets %2$s">',
         'after_widget' => '</div>'
     ));
+
+    register_sidebar( array(
+        'name' => __('Tema Single', 'Tema'),
+        'id' => 'single',
+        'description' => __('Widget area to define widgest into Single','Tema'),
+        'before_widget' => '<div class="SingleWidgets %2$s">',
+        'after_widget' => '</div>'
+    ));
 }
 
 add_action( 'widgets_init', 'TemaAreasWidgets');

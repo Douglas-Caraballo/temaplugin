@@ -1,0 +1,54 @@
+.SinglePage{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.WrapperSingle{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.SingleItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.SingleHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.SingleTitle{
+    text-align: justify;
+}
+.SingleHeaderInfo{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.SingleContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.SingleFigure{
+    width: 100%;
+}
+.SingleThumbnail{
+    width: 100%;
+    height: 100%;
+}
+.SingleContent > p{
+    font-size: 15px;
+    text-align: justify;
+}
+@media only screen and (min-width: 1020px){
+    .SinglePage{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .WrapperSingle{
+        width: 70%;
+    }
+}
