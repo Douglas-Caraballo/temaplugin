@@ -552,20 +552,15 @@ ul{
         width: 70%;
     }
                 .comments-area .comment-respond .comment-form input{
-                    width: 98%;
-                }
-}
-@media only screen and (min-width: 1500px){
-                .comments-area .comment-respond .comment-form input{
                     width: 50%;
                 }
-            .comments-area .comment-respond .comment-form-comment{
-                display: flex;
-                flex-direction: column;
-            }
-            .comments-area .comment-respond .comment-form-comment > textarea{
-                width: 50%;
-            }
+                .comments-area .comment-respond .comment-form .comment-form-comment{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .comments-area .comment-respond .comment-form .comment-form-comment > textarea{
+                    width: 50%;
+                }
 }
 .SingleWidgetsArea{
     display: flex;

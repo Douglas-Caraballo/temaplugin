@@ -110,26 +110,15 @@
         .comment-respond{
             .comment-form{
                 input{
-                    width: 98%;
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 1500px){
-    .comments-area{
-        .comment-respond{
-            .comment-form{
-                input{
                     width: 50%;
                 }
-            }
-            .comment-form-comment{
-                display: flex;
-                flex-direction: column;
-            }
-            .comment-form-comment > textarea{
-                width: 50%;
+                .comment-form-comment{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .comment-form-comment > textarea{
+                    width: 50%;
+                }
             }
         }
     }
