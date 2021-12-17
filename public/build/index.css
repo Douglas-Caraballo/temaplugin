@@ -562,11 +562,30 @@ ul{
                     width: 50%;
                 }
 }
-.SingleWidgetsArea{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+.WrapperSingleWidgets .SingleWidgetsArea{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+.WrapperSingleWidgets .SingleWidgetsArea .widget_recent_entries .wp-block-latest-posts{
+                display: flex;
+                flex-direction:column;
+                gap: 0.5rem;
+                transition: all 0.5s;
+            }
+.WrapperSingleWidgets .SingleWidgetsArea .widget_recent_entries .wp-block-latest-posts a{
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                }
+.WrapperSingleWidgets .SingleWidgetsArea .widget_categories .wp-block-categories{
+                display: flex;
+                flex-direction: column;
+                gap:0.5rem;
+            }
+.WrapperSingleWidgets .SingleWidgetsArea .widget_categories .wp-block-categories .cat-item a{
+                        font-weight: bold;
+                        font-size: 0.85rem;
+                    }
 @media only screen and (min-width: 1020px){
     .WrapperSingleWidgets{
         box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.4);
@@ -580,6 +599,12 @@ ul{
         height: max-content;
         width: 25%;
     }
+                    .WrapperSingleWidgets .SingleWidgetsArea .widget_recent_entries .wp-block-latest-posts li:hover{
+                        color:#c7a770;
+                    }
+                        .WrapperSingleWidgets .SingleWidgetsArea .widget_recent_entries .wp-block-latest-posts li:hover a{
+                        color:#c7a770;
+                        }
 }
 .WrapperArchive{
     padding: 1rem;
@@ -1053,3 +1078,9 @@ ul{
 .site-info .ListSocial .SocialName{
             display: none;
         }
+.wp-block-latest-posts a{
+        color: #222;
+    }
+.wp-block-categories a{
+        color:#222;
+    }
