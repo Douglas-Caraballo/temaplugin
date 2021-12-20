@@ -623,6 +623,60 @@ ul{
 .SingleContent ol{
         padding-left: 1.5rem;
     }
+.wp-block-verse{
+    font-weight: bold;
+    font-style: italic;
+}
+.wp-block-media-text{
+    gap: 1rem;
+}
+.wp-block-media-text__media{
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.9);
+    }
+.wp-block-media-text__content{
+        padding: 0 4%;
+    }
+.wp-block-media-text__content .has-large-font-size{
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+.wp-block-pullquote{
+    font-style: italic;
+    font-weight: bold;
+}
+.wp-block-quote{
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+.wp-block-code{
+    color: #08f;
+    font-style: italic;
+    font-weight: bold;
+}
+.wp-block-table{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.wp-block-table figcaption{
+        font-size: 0.75rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+.wp-block-table .has-fixed-layout thead{
+            background-color: #262626;
+            color:#c7a770;
+            font-style: italic;
+            font-weight: bold;
+        }
+.wp-block-table .has-fixed-layout thead th{
+                padding:0.5rem 0;
+            }
 .WrapperArchive{
     padding: 1rem;
     display: flex;
