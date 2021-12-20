@@ -3,8 +3,10 @@
         display: flex;
         flex-direction: column;
         .wp-block-latest-posts{
+            color: white;
             a{
                 transition: all 0.5s;
+                color: white;
             }
             a:hover{
                 color: #c7a770;

@@ -9,9 +9,11 @@
                 flex-direction:column;
                 gap: 0.5rem;
                 transition: all 0.5s;
+                font-size: 0.85rem;
                 a{
                     font-size: 0.85rem;
                     font-weight: bold;
+                    transition: all 0.5s;
                 }
             }
         }
@@ -21,9 +23,13 @@
                 flex-direction: column;
                 gap:0.5rem;
                 .cat-item{
+                    transition: all 0.5s;
+                    font-size: 0.85rem;
+                    font-weight: bold;
                     a{
                         font-weight: bold;
                         font-size: 0.85rem;
+                        transition: all 0.5s;
                     }
                 }
             }
@@ -47,6 +53,16 @@
                         color:#c7a770;
                         a{
                         color:#c7a770;
+                        }
+                    }
+                }
+            }
+            .widget_categories{
+                .wp-block-categories{
+                    .cat-item:hover{
+                        color:#c7a770;
+                        a{
+                            color:#c7a770;
                         }
                     }
                 }

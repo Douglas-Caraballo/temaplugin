@@ -2,14 +2,19 @@
     .widget_categories{
         display: flex;
         flex-direction: column;
-        .cat-item{
-            a{
+        .wp-block-categories{
+            .cat-item{
+                color:white;
                 transition: all 0.5s;
+                a{
+                    transition: all 0.5s;
+                    color: white;
+                }
             }
-        }
-        .cat-item:hover{
-            a{
-                color:#c7a770;
+            .cat-item:hover{
+                a{
+                    color:#c7a770;
+                }
             }
         }
     }
