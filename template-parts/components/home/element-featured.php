@@ -1,9 +1,8 @@
 <?php
-
     $args=[
         'post_type'=>'post',
         'post_status'=> 'publish',
-        'post_per_page'=>1,
+        'posts_per_page' => 1,
         'tax_query'=>[
             array(
                 'taxonomy'=>'section',

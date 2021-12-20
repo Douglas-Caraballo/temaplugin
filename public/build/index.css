@@ -620,6 +620,9 @@ ul{
                             color:#c7a770;
                         }
 }
+.SingleContent ol{
+        padding-left: 1.5rem;
+    }
 .WrapperArchive{
     padding: 1rem;
     display: flex;
