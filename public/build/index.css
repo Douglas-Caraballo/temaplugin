@@ -698,6 +698,74 @@ ul{
         font-style: italic;
         font-weight: bold;
     }
+.comments-area{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.comments-area .comments-title{
+        display: none;
+    }
+.comments-area .comment-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 1rem;
+    }
+.comments-area .comment-list .comment{
+            border: 2px solid #e8e8e8;
+            /*box-shadow: 0.1rem 0.3rem 1rem rgba(0,0,0,0.3);*/
+            padding: 1rem;
+            background-color:#f9f9f9;
+        }
+.comments-area .comment-list .comment .comment-body{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+.comments-area .comment-list .comment .comment-body .comment-meta{
+                    display: flex;
+                    justify-content:space-between;
+                    flex-direction: column;
+                }
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-author{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-author .avatar{
+                            border-radius: 2rem;
+                        }
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-author .fn .url{
+                                color: #262626;
+                                font-size:1rem;
+                            }
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-author .says{
+                            display: none;
+                        }
+.comments-area .comment-list .comment .comment-body .comment-meta .comment-metadata a{
+                            font-size: 0.8rem;
+                            color:#262626;
+                        }
+.comments-area .comment-list .comment .comment-body .reply{
+                    text-align: end;
+                }
+.comments-area .comment-list .comment .comment-body .reply .comment-reply-link{
+                        color: white;
+                        background-color:#262626;
+                        font-size:0.9rem;
+                        font-weight: bold;
+                        padding: 0.5rem 1rem;
+                    }
+@media only screen and (min-width: 1020px){
+                    .comments-area .comment-list .comment .comment-body .comment-meta{
+                        flex-direction: row;
+                    }
+                        .comments-area .comment-list .comment .comment-body .reply:hover .comment-reply-link{
+                            opacity: 0.8;
+                        }
+}
 .WrapperArchive{
     padding: 1rem;
     display: flex;

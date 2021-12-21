@@ -1,0 +1,82 @@
+.comments-area{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .comments-title{
+        display: none;
+    }
+    .comment-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 1rem;
+        .comment{
+            border: 2px solid #e8e8e8;
+            /*box-shadow: 0.1rem 0.3rem 1rem rgba(0,0,0,0.3);*/
+            padding: 1rem;
+            background-color:#f9f9f9;
+            .comment-body{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .comment-meta{
+                    display: flex;
+                    justify-content:space-between;
+                    flex-direction: column;
+                    .comment-author{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        .avatar{
+                            border-radius: 2rem;
+                        }
+                        .fn{
+                            .url{
+                                color: #262626;
+                                font-size:1rem;
+                            }
+                        }
+                        .says{
+                            display: none;
+                        }
+                    }
+                    .comment-metadata{
+                        a{
+                            font-size: 0.8rem;
+                            color:#262626;
+                        }
+                    }
+                }
+                .reply{
+                    text-align: end;
+                    .comment-reply-link{
+                        color: white;
+                        background-color:#262626;
+                        font-size:0.9rem;
+                        font-weight: bold;
+                        padding: 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1020px){
+    .comments-area{
+        .comment-list{
+            .comment{
+                .comment-body{
+                    .comment-meta{
+                        flex-direction: row;
+                    }
+                    .reply:hover{
+                        .comment-reply-link{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
