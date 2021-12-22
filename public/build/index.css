@@ -702,6 +702,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    border-top: 2px solid #e8e8e8;
 }
 .comments-area .comments-title{
         display: none;
@@ -712,6 +713,7 @@ ul{
         flex-direction: column;
         gap: 1.5rem;
         padding-left: 1rem;
+        padding-top: 2rem;
     }
 .comments-area .comment-list .comment{
             display: flex;
