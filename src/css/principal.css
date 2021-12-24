@@ -13,6 +13,16 @@ ul{
 }
 
 
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1020px){
+
+    .site{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-main{
+        width: 80%;
+    }
 
 }
