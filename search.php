@@ -39,9 +39,11 @@ get_header();
 				endwhile;
 
 				WordpresspluginNumericPagination();
-				get_template_part( 'template-parts/components/archive/element-widget-archive' );
 				?>
 			</div>
+			<?php
+				get_template_part( 'template-parts/components/archive/element-widget-archive' );
+			?>
 		</div>
 		<?php
 		else :
