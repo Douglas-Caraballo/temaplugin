@@ -38,6 +38,13 @@ ul{
     align-items: center;
     background-color: #262626;
     justify-content: space-around;
+    width: 100%;
+    position: sticky;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    top: 0;
+    z-index: 10;
 }
 .MenuNavDesktop{
     display: none;
