@@ -178,7 +178,7 @@ ul{
     z-index: 111;
     width: 22rem;
     max-width: 100%;
-    background-color: #11324D;
+    background-color: #262626;
     height: 100%;
     right: 0;
     transition: all 0.5s;
@@ -203,29 +203,29 @@ ul{
     text-align: center;
     left: 46%;
     right: auto;
-    color: #C1CFC0;
+    color: #e8e8e8;
     cursor: pointer;
     font-size: 1.5rem;
     padding-top: 4rem;
 }
 .MenuNavMobile .menu-item{
         padding: 1rem;
-        border-bottom: 2px solid #141414;
+        border-bottom: 2px solid #8e8e8e;
     }
 .MenuNavMobile .menu-item a{
             font-size: 1.25rem;
-            color: #C1CFC0;
+            color: #e8e8e8;
         }
 .MenuNavMobileSearch .SearchContainerForm{
         position: relative;
     }
 .MenuNavMobileSearch .SearchContainerForm .SearchBar{
             background-color: transparent;
-            border: 1px solid #C1CFC0;
+            border: 1px solid #e8e8e8;
             padding: 0.5rem;
             border-radius: 2rem;
             font-size: 1rem;
-            color: #C1CFC0;
+            color: #e8e8e8;
             width: 100%;
         }
 .MenuNavMobileSearch .SearchContainerForm .SearchButton{
@@ -295,6 +295,7 @@ ul{
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
+    transition: all 0.5s;
 }
 .SeeMoreFeature{
     display: flex;
@@ -313,6 +314,9 @@ ul{
     }
     .FeaturedFigure{
         height: 22rem;
+    }
+    .FeaturedImg:hover{
+        filter: opacity(80%);
     }
         .FeaturedTitle:hover a{
             opacity: 0.7;
@@ -411,6 +415,9 @@ ul{
         padding: 1rem 1.25rem;
         background-color: #888;
     }
+        .PostTitle a:hover{
+            opacity: 0.7;
+        }
 }
 .HomeWidgetsArea{
     display: flex;
@@ -451,6 +458,12 @@ ul{
                     .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item:hover a{
                         color: #c7a770;
                     }
+                        .HomeWidgetsArea .widget_media_gallery .wp-block-gallery .blocks-gallery-grid .blocks-gallery-item img{
+                            transition: all 0.5s;
+                        }
+                        .HomeWidgetsArea .widget_media_gallery .wp-block-gallery .blocks-gallery-grid .blocks-gallery-item:hover img{
+                            filter: opacity(80%);
+                        }
 }
 .HomePage{
     padding: 1rem;
@@ -1287,6 +1300,17 @@ ul{
 .wp-block-latest-posts a{
         color: #222;
     }
+.wp-block-categories .cat-item{
+        display: flex;
+        justify-content: space-between;
+    }
 .wp-block-categories a{
         color:#222;
     }
+.wp-block-search .wp-block-search__label{
+        font-weight: bold;
+    }
+.wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button{
+            background: transparent;
+            border: none;
+        }

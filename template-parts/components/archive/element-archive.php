@@ -7,7 +7,7 @@
     <div class="ArchiveItemDate">
         <span><?php the_title('<h3 class="ArchiveTitlePost"><a href='.get_the_permalink().'>','</a></h3>'); ?></span>
         <span><?php the_excerpt(); ?></span>
-        <span class="ArchivePostAutor"><?php the_author(); ?></span>
+        <span class="ArchivePostAutor"><h5><?php the_author(); ?></h5></span>
         <a class="SeeMore" href="<?= esc_url(get_permalink()); ?>">Leer</a>
     </div>
 </article>

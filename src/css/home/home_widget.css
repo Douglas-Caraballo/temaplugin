@@ -41,5 +41,21 @@
                 }
             }
         }
+        .widget_media_gallery{
+            .wp-block-gallery {
+                .blocks-gallery-grid{
+                    .blocks-gallery-item{
+                        img{
+                            transition: all 0.5s;
+                        }
+                    }
+                    .blocks-gallery-item:hover{
+                        img{
+                            filter: opacity(80%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

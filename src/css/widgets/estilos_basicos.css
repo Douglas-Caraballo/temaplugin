@@ -5,7 +5,22 @@
 }
 
 .wp-block-categories{
+    .cat-item{
+        display: flex;
+        justify-content: space-between;
+    }
     a{
         color:#222;
+    }
+}
+.wp-block-search{
+    .wp-block-search__label{
+        font-weight: bold;
+    }
+    .wp-block-search__inside-wrapper{
+        .wp-block-search__button{
+            background: transparent;
+            border: none;
+        }
     }
 }

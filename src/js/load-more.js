@@ -20,21 +20,14 @@ function display_post(posts){
 
         let category = NewItemPost.querySelector('.PostCategoriesName');
         category.innerHTML="";
-        console.log(post.category);
-        //let count=0;
+        //console.log(post.category);
         post.category.map(cat =>{
             let link = document.createElement("a");
             link.setAttribute('href',cat.taxonomy+'/'+cat.slug);
             link.innerHTML=cat.name+" - ";
             category.appendChild(link);
-            /*count++
-            while (count>0){
-                document.createTextNode("/");
-                count=0;
-            }*/
         })
         category.insertAdjacentHTML('afterbegin','- ');
-        //category.insertAdjacentHTML('beforeend','-');
 
         let title = NewItemPost.querySelector('.PostTitle a');
         title.setAttribute('href', post.permalink);

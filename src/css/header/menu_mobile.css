@@ -4,7 +4,7 @@
     z-index: 111;
     width: 22rem;
     max-width: 100%;
-    background-color: #11324D;
+    background-color: #262626;
     height: 100%;
     right: 0;
     transition: all 0.5s;
@@ -29,7 +29,7 @@
     text-align: center;
     left: 46%;
     right: auto;
-    color: #C1CFC0;
+    color: #e8e8e8;
     cursor: pointer;
     font-size: 1.5rem;
     padding-top: 4rem;
@@ -37,10 +37,10 @@
 .MenuNavMobile{
     .menu-item{
         padding: 1rem;
-        border-bottom: 2px solid #141414;
+        border-bottom: 2px solid #8e8e8e;
         a{
             font-size: 1.25rem;
-            color: #C1CFC0;
+            color: #e8e8e8;
         }
     }
 }
@@ -49,11 +49,11 @@
         position: relative;
         .SearchBar{
             background-color: transparent;
-            border: 1px solid #C1CFC0;
+            border: 1px solid #e8e8e8;
             padding: 0.5rem;
             border-radius: 2rem;
             font-size: 1rem;
-            color: #C1CFC0;
+            color: #e8e8e8;
             width: 100%;
         }
         .SearchButton{

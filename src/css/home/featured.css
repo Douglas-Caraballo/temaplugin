@@ -34,6 +34,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: all 0.5s;
 }
 .SeeMoreFeature{
     display: flex;
@@ -52,6 +53,9 @@
     }
     .FeaturedFigure{
         height: 22rem;
+    }
+    .FeaturedImg:hover{
+        filter: opacity(80%);
     }
     .FeaturedTitle:hover{
         a{
