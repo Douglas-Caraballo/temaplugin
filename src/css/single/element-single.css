@@ -32,6 +32,7 @@
     gap: 0.5rem;
     a{
         color: #000;
+        transition:all 0.5s;
     }
 }
 .SingleAutor::before{
@@ -105,6 +106,11 @@
     }
     .WrapperSingle{
         width: 70%;
+    }
+    .SinglePostInfo:hover{
+        a{
+            color:#c7a770 ;
+        }
     }
     .comments-area{
         .comment-respond{

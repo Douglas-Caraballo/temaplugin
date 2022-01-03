@@ -512,6 +512,7 @@ ul{
 }
 .SinglePostInfo a{
         color: #000;
+        transition:all 0.5s;
     }
 .SingleAutor::before{
     content: url('https://i.postimg.cc/QtXK9SpY/usuario-1.png');
@@ -585,6 +586,9 @@ ul{
     .WrapperSingle{
         width: 70%;
     }
+        .SinglePostInfo:hover a{
+            color:#c7a770 ;
+        }
                 .comments-area .comment-respond .comment-form input{
                     width: 50%;
                 }
@@ -735,6 +739,9 @@ ul{
         font-style: italic;
         font-weight: bold;
     }
+.wp-block-columns{
+    gap: 2rem;
+}
 .comments-area{
     display: flex;
     flex-direction: column;
