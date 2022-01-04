@@ -5,7 +5,9 @@ while ( have_posts() ) :
     the_post();
 ?>
     <div class="WrapperSingle">
-        <?php get_template_part('template-parts/components/single/element','single'); ?>
+        <?php   get_template_part('template-parts/components/single/element','single');
+                get_template_part('template-parts/components/single/element','author');
+        ?>
     <?php
     // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) :
