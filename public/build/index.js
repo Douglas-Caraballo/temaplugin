@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/dark-theme.js":
+/*!******************************!*\
+  !*** ./src/js/dark-theme.js ***!
+  \******************************/
+/***/ (() => {
+
+eval("const   darkTheme = document.querySelector('#darkTheme'),\n        bodyDark = document.querySelector('body');\n\ndarkTheme.addEventListener('click',(e)=>{\n    bodyDark.classList.toggle('DarkMode');\n});\n\n//# sourceURL=webpack://underscores/./src/js/dark-theme.js?");
+
+/***/ }),
+
 /***/ "./src/js/hamburger.js":
 /*!*****************************!*\
   !*** ./src/js/hamburger.js ***!
@@ -26,7 +36,7 @@ eval("const hamburger =document.querySelector('#hamburger'),\n    menu = documen
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./load-more */ \"./src/js/load-more.js\");\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_load_more__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburger */ \"./src/js/hamburger.js\");\n/* harmony import */ var _hamburger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hamburger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./load-more */ \"./src/js/load-more.js\");\n/* harmony import */ var _load_more__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_load_more__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _dark_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dark-theme */ \"./src/js/dark-theme.js\");\n/* harmony import */ var _dark_theme__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dark_theme__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
 
 /***/ }),
 

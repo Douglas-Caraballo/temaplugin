@@ -16,4 +16,7 @@
             <?php get_template_part( 'template-parts/components/reusable/element', 'social' ) ?>
         </div>
     </ul>
+    <?php
+        get_template_part( 'template-parts/components/reusable/element-dark', 'theme' );
+    ?>
 </div>

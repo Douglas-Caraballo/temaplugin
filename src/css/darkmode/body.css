@@ -1,0 +1,13 @@
+.DarkMode{
+    background-color: #292c35;
+    transition: all 0.5s;
+    .HomePage{
+        color: white;
+    }
+    .FeaturedTitle{
+        a{
+            color: white;
+            transition: all 0.5s;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.DarkMode{
+    .site-header{
+        background-color: #111;
+        transition: all 0.5s;
+    }
+    .site-footer{
+        background-color: #111;
+        transition: all 0.5s;
+    }
+    .site-info{
+        background-color: #111;
+        transition: all 0.5s;
+    }
+    .SocialList{
+        background-color: #111;
+    }
+}
