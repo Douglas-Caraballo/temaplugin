@@ -1,0 +1,27 @@
+.DarkMode{
+    .wp-block-latest-posts{
+        a{
+            color:white;
+        }
+    }
+    .wp-block-categories{
+        a{
+            color:white;
+        }
+    }
+    .wp-block-search__button-inside{
+        .wp-block-search__inside-wrapper{
+            .wp-block-search__input{
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+    .wp-block-search{
+        .wp-block-search__button{
+            svg{
+                fill: white;
+            }
+        }
+    }
+}

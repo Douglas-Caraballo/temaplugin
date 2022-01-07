@@ -1,2 +1,4 @@
 @import './darkmode/header-footer.css';
 @import './darkmode/body.css';
+@import './darkmode/comment-dark-theme.css';
+@import './darkmode/widget-dark-theme.css';

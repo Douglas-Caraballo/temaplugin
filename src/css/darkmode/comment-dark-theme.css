@@ -1,0 +1,24 @@
+.DarkMode{
+    .comments-area{
+        .comment-list {
+            .comment{
+                .comment-body{
+                    background-color: #292c35;
+                    border: 2px solid rgba(0,0,0,0.3);
+                    .comment-meta{
+                        a{
+                            color:white;
+                        }
+                        .comment-author{
+                            .fn{
+                                .url{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

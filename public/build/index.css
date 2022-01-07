@@ -135,6 +135,22 @@ ul{
             display: block;
             z-index: 40;
         }
+    .HeaderDarkTheme{
+        display: flex;
+        align-items: center;
+    }
+    .DarkModeButton{
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        border-radius: 2rem;
+        cursor: pointer;
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
+    }
+    .DarkModeButton::before{
+        content: url('https://i.postimg.cc/LXFxCmbf/crescent-moon.png');
+        transition: all 0.5s;
+    }
 }
 @-webkit-keyframes list{
     0%{
@@ -1375,27 +1391,97 @@ ul{
         }
 .DarkMode .site-header{
         background-color: #111;
+        transition: all 0.7s;
+        box-shadow: 0 0.1rem 0.5rem rgba(255,255,255,0.3);
+    }
+.DarkMode .DarkModeButton::before{
+        content: url('https://i.postimg.cc/KvjKRwGh/sun.png');
         transition: all 0.5s;
     }
 .DarkMode .site-footer{
         background-color: #111;
-        transition: all 0.5s;
+        transition: all 0.7s;
     }
 .DarkMode .site-info{
         background-color: #111;
-        transition: all 0.5s;
+        transition: all 0.7s;
     }
 .DarkMode .SocialList{
         background-color: #111;
     }
 .DarkMode{
-    background-color: #292c35;
-    transition: all 0.5s;
+    background-color: #1B1C20;
+    transition: all 0.7s;
+
 }
 .DarkMode .HomePage{
         color: white;
+        transition: all 0.7s;
     }
 .DarkMode .FeaturedTitle a{
             color: white;
-            transition: all 0.5s;
         }
+.DarkMode .SeeMoreFeature a{
+            background-color:#111;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+            border: 1px solid rgba(0,0,0,0.9);
+        }
+.DarkMode .PostTitle a{
+            color: white;
+        }
+.DarkMode .PostCategories .PostCategoriesName a{
+                color: white;
+            }
+.DarkMode .BtnMore{
+        background-color:#111;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+        border: 1px solid rgba(0,0,0,0.9);
+    }
+.DarkMode .SinglePage{
+        color: white;
+    }
+.DarkMode .SinglePostInfo a{
+            color: white;
+        }
+.DarkMode .site-main{
+        color:white;
+    }
+.DarkMode .SectionAuthor{
+        background-color: #292c35;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+.DarkMode .AutorName a{
+            color:white;
+        }
+@media only screen and (min-width: 1020px){
+                .DarkMode .PostCategories .PostCategoriesName a:hover{
+                    color: #c7a770;
+                }
+            .DarkMode .SinglePostInfo:hover a{
+                color: #c7a770;
+            }
+
+}
+.DarkMode .comments-area .comment-list .comment .comment-body{
+                    background-color: #292c35;
+                    border: 2px solid rgba(0,0,0,0.3);
+                }
+.DarkMode .comments-area .comment-list .comment .comment-body .comment-meta a{
+                            color:white;
+                        }
+.DarkMode .comments-area .comment-list .comment .comment-body .comment-meta .comment-author .fn .url{
+                                    color: white;
+                                }
+.DarkMode .wp-block-latest-posts a{
+            color:white;
+        }
+.DarkMode .wp-block-categories a{
+            color:white;
+        }
+.DarkMode .wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input{
+                background-color: transparent;
+                color: white;
+            }
+.DarkMode .wp-block-search .wp-block-search__button svg{
+                fill: white;
+            }

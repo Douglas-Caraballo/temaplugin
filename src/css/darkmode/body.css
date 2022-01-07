@@ -1,13 +1,77 @@
 .DarkMode{
-    background-color: #292c35;
-    transition: all 0.5s;
+    background-color: #1B1C20;
+    transition: all 0.7s;
     .HomePage{
         color: white;
+        transition: all 0.7s;
     }
     .FeaturedTitle{
         a{
             color: white;
-            transition: all 0.5s;
         }
     }
+    .SeeMoreFeature{
+        a{
+            background-color:#111;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+            border: 1px solid rgba(0,0,0,0.9);
+        }
+    }
+    .PostTitle{
+        a{
+            color: white;
+        }
+    }
+    .PostCategories{
+        .PostCategoriesName{
+            a{
+                color: white;
+            }
+        }
+    }
+    .BtnMore{
+        background-color:#111;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+        border: 1px solid rgba(0,0,0,0.9);
+    }
+    .SinglePage{
+        color: white;
+    }
+    .SinglePostInfo{
+        a{
+            color: white;
+        }
+    }
+    .site-main{
+        color:white;
+    }
+    .SectionAuthor{
+        background-color: #292c35;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    .AutorName{
+        a{
+            color:white;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1020px){
+
+    .DarkMode{
+        .PostCategories{
+            .PostCategoriesName{
+                a:hover{
+                    color: #c7a770;
+                }
+            }
+        }
+        .SinglePostInfo:hover{
+            a{
+                color: #c7a770;
+            }
+        }
+    }
+
 }
