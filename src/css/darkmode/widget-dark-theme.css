@@ -24,4 +24,57 @@
             }
         }
     }
+    .HomeWidgetsArea{
+        .widget_categories{
+            .wp-block-categories{
+                .cat-item{
+                    color: white;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .ArchiveWidgetsArea{
+        .widget_categories{
+            .wp-block-categories{
+                .cat-item{
+                    color:white;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    .DarkMode{
+        .HomeWidgetsArea{
+            .widget_categories{
+                .wp-block-categories{
+                    .cat-item:hover{
+                        color: #c7a770;
+                        a{
+                            color: #c7a770;
+                        }
+                    }
+                }
+            }
+        }
+        .ArchiveWidgetsArea{
+            .widget_categories{
+                .wp-block-categories{
+                    .cat-item:hover{
+                        color: #c7a770;
+                        a{
+                            color: #c7a770;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

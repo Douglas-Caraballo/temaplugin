@@ -1412,7 +1412,6 @@ ul{
 .DarkMode{
     background-color: #1B1C20;
     transition: all 0.7s;
-
 }
 .DarkMode .HomePage{
         color: white;
@@ -1453,6 +1452,31 @@ ul{
 .DarkMode .AutorName a{
             color:white;
         }
+.DarkMode .site{
+        color: white;
+    }
+.DarkMode .NotfoundInfo .SearchContainerForm .SearchBar{
+                color: white;
+                border:1px solid black;
+                box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+            }
+.DarkMode .NotfoundInfo .SearchContainerForm .SearchButton{
+                background-color: #000;
+            }
+.DarkMode .SubmitContact{
+        background-color: #000;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+    }
+.DarkMode .wp-block-table table{
+            border:1px solid rgba(255,255,255,0.2);
+        }
+.DarkMode .ArchiveTitlePost a{
+            color: white;
+        }
+.DarkMode .SeeMore{
+        background-color: #000;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+    }
 @media only screen and (min-width: 1020px){
                 .DarkMode .PostCategories .PostCategoriesName a:hover{
                     color: #c7a770;
@@ -1485,3 +1509,29 @@ ul{
 .DarkMode .wp-block-search .wp-block-search__button svg{
                 fill: white;
             }
+.DarkMode .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item{
+                    color: white;
+                }
+.DarkMode .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item a{
+                        color: white;
+                    }
+.DarkMode .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item{
+                    color:white;
+                }
+.DarkMode .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item a{
+                        color: white;
+                    }
+@media only screen and (min-width: 1020px){
+                    .DarkMode .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item:hover{
+                        color: #c7a770;
+                    }
+                        .DarkMode .HomeWidgetsArea .widget_categories .wp-block-categories .cat-item:hover a{
+                            color: #c7a770;
+                        }
+                    .DarkMode .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item:hover{
+                        color: #c7a770;
+                    }
+                        .DarkMode .ArchiveWidgetsArea .widget_categories .wp-block-categories .cat-item:hover a{
+                            color: #c7a770;
+                        }
+}
