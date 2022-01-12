@@ -50,6 +50,16 @@ ul{
 .MenuNavDesktop{
     display: none;
 }
+.DarkModeButton{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+.DarkModeButton::before{
+    content: url('https://i.postimg.cc/LXFxCmbf/crescent-moon.png');
+    transition: all 0.5s;
+}
 @media only screen and (min-width: 1020px){
     .site-header{
         width: 100%;
@@ -146,10 +156,6 @@ ul{
         border-radius: 2rem;
         cursor: pointer;
         box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
-    }
-    .DarkModeButton::before{
-        content: url('https://i.postimg.cc/LXFxCmbf/crescent-moon.png');
-        transition: all 0.5s;
     }
 }
 @-webkit-keyframes list{
