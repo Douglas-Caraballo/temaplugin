@@ -10,7 +10,7 @@ ul{
 }
 .WrapperBody{
     background-color: #FBFBFB;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 @media only screen and (min-width: 1020px){
 
@@ -1476,6 +1476,26 @@ ul{
 .DarkMode .SeeMore{
         background-color: #000;
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+    }
+.DarkMode .WrapperSearchNone .SearchContainerForm .SearchBar{
+                color: white;
+                border:1px solid black;
+                box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.9);
+            }
+.DarkMode .WrapperSearchNone .SearchContainerForm .SearchButton{
+                background-color: #000;
+            }
+.DarkMode .SingleContent a{
+            color: white;
+        }
+.DarkMode .SingleAutor::before{
+        content: url('https://i.postimg.cc/KYg4LHFW/001-usuario.png');
+    }
+.DarkMode .SingleDate::before{
+        content: url('https://i.postimg.cc/wvXv4R1c/002-reloj.png');
+    }
+.DarkMode .SingleComments::before{
+        content: url('https://i.postimg.cc/RF5hTLZZ/003-conversacion.png');
     }
 @media only screen and (min-width: 1020px){
                 .DarkMode .PostCategories .PostCategoriesName a:hover{

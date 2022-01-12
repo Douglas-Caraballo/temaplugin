@@ -15,7 +15,7 @@
   \******************************/
 /***/ (() => {
 
-eval("const   darkTheme = document.querySelector('#darkTheme'),\n        bodyDark = document.querySelector('body');\n\ndarkTheme.addEventListener('click',(e)=>{\n    bodyDark.classList.toggle('DarkMode');\n});\n\n//# sourceURL=webpack://underscores/./src/js/dark-theme.js?");
+eval("const   darkTheme = document.querySelector('#darkTheme'),\n        bodyDark = document.querySelector('body');\n\nlet aux=0;\n\ndarkTheme.addEventListener('click',(e)=>{\n    bodyDark.classList.toggle('DarkMode');\n    if(aux==0){\n        localStorage.setItem('DarkMode', 'true');\n        aux=1;\n    }else{\n        localStorage.setItem('DarkMode','false');\n        aux=0;\n    }\n\n});\n\nlet dark = localStorage.getItem('DarkMode');\nif(dark=='true'){\n    bodyDark.classList.add('DarkMode');\n    aux=1;\n}else{\n    bodyDark.classList.remove('DarkMode');\n    aux=0;\n}\n\n//# sourceURL=webpack://underscores/./src/js/dark-theme.js?");
 
 /***/ }),
 
