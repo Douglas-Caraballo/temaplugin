@@ -113,6 +113,16 @@
     .SingleComments::before{
         content: url('https://i.postimg.cc/RF5hTLZZ/003-conversacion.png');
     }
+    .AsideMenu{
+        background-color: #111;
+    }
+    .MenuNavMobile{
+        .menu-item{
+            a{
+                color:white;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1020px){
