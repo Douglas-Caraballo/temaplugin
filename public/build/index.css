@@ -464,7 +464,7 @@ ul{
                     font-size:0.85rem;
                     transition: all 0.5s;
                 }
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1020px){
     .WrapperHomeWidgets{
         width: 26%;
     }
@@ -1269,7 +1269,7 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 .widget_tag_cloud{
     list-style: none;
@@ -1285,16 +1285,13 @@ ul{
 @media only screen and (min-width: 720px){
     .FooterWidgetArea{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
     }
 }
 @media only screen and (min-width: 1100px){
     .FooterWidgets{
         flex-direction: row;
-    }
-    .FooterWidgetArea{
-        grid-template-columns: repeat(3, 1fr);
     }
 }
 .FooterWidgetArea .widget_tag_cloud{
@@ -1318,7 +1315,7 @@ ul{
                 border-radius: 0.25rem;
                 display: flex;
                 align-items: center;
-                    font-size: 1rem !important;
+                font-size: 1rem !important;
             }
 .FooterWidgetArea .widget_tag_cloud .wp-block-tag-cloud .tag-cloud-link:hover{
                 color:#c7a770;

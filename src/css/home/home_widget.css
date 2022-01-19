@@ -23,7 +23,7 @@
     }
 }
 
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1020px){
     .WrapperHomeWidgets{
         width: 26%;
     }
