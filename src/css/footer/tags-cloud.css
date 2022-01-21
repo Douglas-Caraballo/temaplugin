@@ -22,6 +22,7 @@
             }
             .tag-cloud-link:hover{
                 color:#c7a770;
+                transform: scale(1.05);
             }
         }
     }

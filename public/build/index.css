@@ -51,8 +51,8 @@ ul{
     display: none;
 }
 .DarkModeButton{
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 2rem;
     border: none;
 }
@@ -150,10 +150,6 @@ ul{
         align-items: center;
     }
     .DarkModeButton{
-        width: 3rem;
-        height: 3rem;
-        border: none;
-        border-radius: 2rem;
         cursor: pointer;
         box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
     }
@@ -1319,6 +1315,7 @@ ul{
             }
 .FooterWidgetArea .widget_tag_cloud .wp-block-tag-cloud .tag-cloud-link:hover{
                 color:#c7a770;
+                transform: scale(1.05);
             }
 .FooterWidgetArea .widget_categories{
         display: flex;
